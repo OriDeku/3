@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:orientation="vertical"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="wrap_content">
+    <TextView
+            android:id="@+id/text_username"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="帐号："
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/text_password"
+            app:layout_constraintTop_toTopOf="@+id/text_password"
+            app:layout_constraintStart_toStartOf="parent"></TextView>
+
+    <EditText
+            android:id="@+id/edit_username"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:hint="Username"
+            android:inputType="none"
+            android:digits="abcdefghigklmnopqrstuvwxyz1234567890_"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" tools:layout_editor_absoluteY="70dp"
+            app:layout_constraintHorizontal_bias="0.0"></EditText>
+
+    <TextView
+            android:id="@+id/text_password"
+            android:layout_width="0dp"
+            android:layout_height="3dp"
+            android:gravity="left"
+            android:text="Username"
+            android:textColor="#FFFFFF"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"></TextView>
+
+    <EditText
+            android:id="@+id/edit_password"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9dp"
+            android:layout_marginRight="9dp"
+            android:gravity="left"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:digits="1234567890" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/text_username" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="9dp" android:layout_marginEnd="9dp" android:layout_marginTop="16dp"
+            app:layout_constraintHorizontal_bias="0.0"></EditText>
+</android.support.constraint.ConstraintLayout>
